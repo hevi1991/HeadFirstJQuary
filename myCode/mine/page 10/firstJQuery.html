@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>jQuery goes to DOM-ville</title>
+    <style type="text/css">
+        #change_me {
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            font: 24px arial;
+        }
+        
+        #move_up #move_down #color #disappear {
+            padding: 5px;
+        }
+    </style>
+    <script src="scripts/jquery-3.1.0.js"></script>
+</head>
+
+<body>
+
+    <button id="move_up">Move Up</button>
+    <button id="move_down">Move Down</button>
+    <button id="color">Change color</button>
+    <button id="disappear">Disappear/Re-appear</button>
+
+    <div id="change_me">Make Me Do Stuff!</div>
+    <script>
+        //jQuery()可以传三种不同的内容（HTML串,CSS选择器,JavaScript对象）
+        $(document).ready(function(){
+            
+            $("#move_up").click(function() {
+                $("#change_me").animate({
+                    top: 30
+                }, 200);
+            }); //结束 move_up函数
+            
+            jQuery("#move_down").click(function() {//$() 等同于 jQuery()
+                $("#change_me").animate({
+                    top: 500
+                }, 2000);
+            }); //结束 move_down函数
+            
+            $("#color").click(function() {
+                $("#change_me").css("color", "yellow")
+            }); //改变颜色
+            
+            $("#disappear").click(function() {
+                $("#change_me").toggle("slow")
+            }); //结束消失
+
+
+        }); //结束文档准备函数
+    </script>
+
+</body>
+
+</html>
