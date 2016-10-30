@@ -1,17 +1,41 @@
-#controls{
-	clear:both;
+#controls {
+    clear: both;
 }
-#my_hand{
-	clear:both;
-	border: 1px solid gray;
-	height: 250px;
-	width: 835px;
+
+#my_hand {
+    clear: both;
+    border: 1px solid gray;
+    height: 250px;
+    width: 835px;
+}
+
+.win{
+	color:green;
+}
+.lose{
+	color:red;
 }
 
 h3 {
-	display: inline;
-	padding-right: 40px;
+    display: inline;
+    padding-right: 40px;
 }
-.current_hand{
+
+.current_hand {
+    float: left;
+}
+
+#btnHit, #btnStick, #btnRestart{
+	display:none;
 	float:left;
+}
+#result{
+	display:none;
+	position:absolute;
+	top: 100px;
+	left: 20px;
+}
+#result > img {
+	width: 500px;
+	height: 250px;
 }

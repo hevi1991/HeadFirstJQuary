@@ -1,22 +1,33 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<title>Head First Black Jack</title> 
-		<link href="styles/my_style.css" rel="stylesheet">
-	</head> 
-	<body>
-		<div id="main">
-			<h1>Click to reveal your cards</h1>
-			<h3 id="hdrTotal"></h3><h3 id="hdrResult"></h3>
-			<div id="my_hand">
-			</div>
-			<div id="controls">
-				<div id="btnDeal">
-					<img src="images/deck_small.jpg">
-				</div>
-			</div>
-		</div>
-		<script src="scripts/jquery-1.6.2.min.js"></script>
-		<script src="scripts/my_scripts.js"></script>
-	</body>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Head First Black Jack</title>
+    <link href="styles/my_style.css" rel="stylesheet"> </head>
+
+<body>
+    <div id="main">
+        <h1>Click to reveal your cards</h1>
+        <h3 id="hdrTotal"></h3>
+        <!--总点数-->
+        <h3 id="hdrResult"></h3>
+        <!--游戏结果-->
+        <div id="my_hand"> </div>
+        <!--手牌-->
+        <div id="result"><img src="images/check.png" id="imgResult"></div>
+        <div id="controls">
+            <!--控制-->
+            <div id="btnDeal"> <img src="images/deck_small.jpg"> </div>
+            <!--点击开局-->
+            <div id="btnHit"> <img src="images/deck_small.jpg"> </div>
+            <!--再要一张牌-->
+            <div id="btnStick"> <img src="images/stick_small.jpg"> </div>
+            <!--结束当局-->
+            <div id="btnRestart"> <img src="images/restart_small.jpg"> </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-1.6.2.min.js"></script>
+    <script src="scripts/my_scripts.js"></script>
+</body>
+
 </html>

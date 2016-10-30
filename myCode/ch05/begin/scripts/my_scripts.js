@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    
+    
+    
+//    window.onblur = 
+//    window.onfocus = 
 
     /*各个按钮的调用事件，第十次点击，返回第一张图片*/
 
@@ -53,9 +58,9 @@ $(document).ready(function () {
 
 
     /*背景闪电部分*/
-    setInterval("lightning_one()",4000);
-    setInterval("lightning_two()",5000);
-    setInterval("lightning_three()",7000);
+    window.setInterval("lightning_one()",4000);
+    window.setInterval("lightning_two()",5000);
+    window.setInterval("lightning_three()",7000);
     
     //page 215
     

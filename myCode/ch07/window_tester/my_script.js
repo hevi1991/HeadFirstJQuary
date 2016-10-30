@@ -2,8 +2,8 @@ $(document).ready(function(){
 	
 //Keep track of when a visitor leaves the window and when they return
 
-	window.onblur = blurMe;
-	window.onfocus = focusMe;
+	window.onblur = blurMe;//失去焦点时候调用
+	window.onfocus = focusMe;//得到焦点时候调用
 	
 	function blurMe() {
 		var t=new Date();
@@ -16,6 +16,7 @@ $(document).ready(function(){
 		$("ul.myList").append("<li class='focusItem'>You came back to this window at "+t.getHours()+":"+t.getMinutes()+":"+t.getSeconds()+"</li>");
 
 	}
+    
 	
 });//end doc.onready function
 
